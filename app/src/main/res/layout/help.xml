@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="10dp">
+
+	<ScrollView
+		android:id="@+id/helpScrollView"
+		android:layout_width="match_parent"
+		android:layout_height="300dp">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="帮助"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textSize="25sp"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="标题栏上的"
+					android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+				<ProgressBar
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:id="@+id/actionpb"
+					android:visibility="visible"
+					android:layout_toRightOf="@id/actionTextView1"
+					android:layout_centerInParent="true"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="和"
+					android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+				<ProgressBar
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:id="@+id/actionerrpb"
+					android:visibility="visible"
+					android:indeterminateTint="#ff5f00"
+					android:indeterminateTintMode="src_atop"
+					android:layout_toRightOf="@id/actionTextView1"
+					android:layout_centerInParent="true"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="分别是什么意思？"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="绿色进度环表示您的手机正在搜索GPS信号或网络位置信息，请您耐心等待。首次定位可能需要较长时间，属正常现象。如果您使用的是GPS信号，那么请到室外开阔处使用，以获取最好的定位效果。"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="橙色进度环表示位置信息已断开或位置获取选项不正确，这时请您不要盲目等待，解决方法有："
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="1.打开右侧的侧拉菜单，切换另一种定位方式。如果您正在定位，请先停止定位，然后切换定位方式；"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="20dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="2.打开系统的定位服务设置，尝试切换另外一种定位方式，然后重新开始定位。"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="20dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="我应该如何选择"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textSize="25sp"
+				android:layout_marginTop="40dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="打开系统的定位设置，里面基本会有三种选项："
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="仅使用GPS，仅用设备定位"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="20dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="使用WLAN和移动网络，更省电"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="20dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="使用GPS、WLAN和移动网络，准确度最高"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="20dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="如同其说明，仅用GPS定位可以不使用网络，但是必须有GPS信号，而且电量消耗较大；使用移动网络或WLAN可以省电，但是准确度较低；使用高精度模式可以获取最精准的定位，但是耗电也最大。"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="如果您已经做好了选择，请点击选项，然后回到本软件，如果您选择的是上述第一个或第三个选项，那么请在软件设置内点击第一个按钮，然后启动或重启定位；如果您选择的是上述第二个选项，那么请在软件设置内点击第二个按钮，然后启动或重启定位。"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10dp"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

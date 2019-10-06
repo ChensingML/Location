@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="20dp">
+
+	<ImageView
+		android:src="@drawable/ic_launcher"
+		android:layout_width="wrap_content"
+		android:layout_height="100dp"
+		android:scaleType="fitCenter"
+		android:layout_gravity="center"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Location"
+		android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Copyright (c) Chen.ZH 2019"
+			android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Location是由Chen.ZH开发的一款适用于Android平台的定位软件，可以较为精确的定位出当前的位置信息"
+			android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

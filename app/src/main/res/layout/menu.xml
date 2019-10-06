@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<ImageView
+			android:src="@drawable/pic"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:adjustViewBounds="true"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#F2FF9A">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="设置"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textSize="30sp"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="10dp">
+
+				<RadioGroup
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<RadioButton
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="使用GPS或高精度定位"
+						android:id="@+id/menuugps"/>
+
+					<RadioButton
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="使用网络定位"
+						android:id="@+id/menuusenetwork"/>
+
+				</RadioGroup>
+
+				<Button
+					android:layout_width="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_height="wrap_content"
+					android:text="我应该如何选择？"
+					android:id="@+id/menuhowshouldise"
+					android:onClick="hsis"/>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center">
+
+					<EditText
+						android:layout_width="150dp"
+						android:inputType="number"
+						android:layout_height="wrap_content"
+						android:ems="10"
+						android:hint="时间间隔(ms)"
+						android:id="@+id/menutime"/>
+
+					<CheckBox
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="不间断更新"
+						android:id="@+id/menuupdateat"
+						android:onClick="bjd"/>
+
+				</LinearLayout>
+
+				<Button
+					android:layout_width="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_height="wrap_content"
+					android:text="恢复默认设置"
+					android:textColor="#34DF17"
+					android:id="@+id/menubacktonormal"
+					android:onClick="gtno"/>
+
+				<Button
+					android:layout_width="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_height="wrap_content"
+					android:text="帮助"
+					android:onClick="help"/>
+
+				<Button
+					android:layout_width="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_height="wrap_content"
+					android:text="关于"
+					android:id="@+id/menuabout"
+					android:onClick="about"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
